@@ -1,5 +1,4 @@
 import React from 'react';
-import data from '@/ldata/home/works.json';
 
 function Portfolio({data}) {
   return (

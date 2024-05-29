@@ -1,7 +1,7 @@
 "use client"
 import React,{useState} from 'react';
 import { toast } from "react-toastify";
-
+import { contactForm } from '@/lib/firebase';
 function Info() {
 
   const [input, setInput] = useState({
@@ -30,7 +30,9 @@ function Info() {
       });
       setInput({ name: "", email: "", message: "", subject: "" });
       // TODO : ADD email template
-    } catch (error) {}
+    } catch (error) {
+      console.error('error',error)
+    }
   };
 
 

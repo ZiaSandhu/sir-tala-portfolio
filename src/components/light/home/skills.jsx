@@ -1,6 +1,4 @@
 import React from 'react';
-import data2 from '@/ldata/home/skills2.json';
-import data from '@/ldata/home/skills.json';
 
 function Skills({data}) {
   return (

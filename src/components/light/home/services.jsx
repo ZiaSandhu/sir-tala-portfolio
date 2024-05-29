@@ -1,5 +1,4 @@
 import React from 'react';
-import data from '@/ldata/home/services.json';
 function Services({data}) {
   return (
     <div

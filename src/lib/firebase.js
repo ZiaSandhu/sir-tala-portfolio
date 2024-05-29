@@ -34,7 +34,7 @@ export async function getMultipleCollections() {
 }
 
 export async function contactForm(formData){
-  await addDoc(collection(db, 'contacts'), formData);
+  await addDoc(collection(db, 'contactdata'), formData);
 }
 
 // export async function downloadCv() {

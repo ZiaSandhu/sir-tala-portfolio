@@ -2,7 +2,7 @@
 import ProgressScroll from "@/components/Common/ProgressScroll";
 import Cursor from "@/components/Common/cusor";
 import LoadingScreen from "@/components/Common/loader";
-import Blog from "@/components/light/home/blog";
+// import Blog from "@/components/light/home/blog";
 import ContactUs from "@/components/light/contact/ContactUs";
 import Info from "@/components/light/contact/info";
 import Footer from "@/components/light/home/footer";
@@ -34,7 +34,6 @@ function Light() {
     try {
       const response = await fetchDataFirebase("portfolio");
       let newData = transformData(response)
-      console.log("🚀 ~ fetchData ~ newData:", newData)
     
       setData(newData);
     } catch (error) {
